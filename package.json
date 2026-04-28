@@ -1,0 +1,23 @@
+{
+  "name": "edmt-mint-cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local CLI for scanning, dry-running, and batch minting eDMT/eNAT blocks.",
+  "bin": {
+    "edmt-mint": "./src/cli.js"
+  },
+  "scripts": {
+    "scan": "node ./src/cli.js scan",
+    "dry-run": "node ./src/cli.js dry-run",
+    "mint": "node ./src/cli.js mint",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "viem": "^2.23.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
